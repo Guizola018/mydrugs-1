@@ -1,59 +1,58 @@
 const produtos = [
     {
-        image: './img/products/blue_pill.png',
-        name: 'Blue Clover',
-        desc: '70MG OF MDMA PER PILL',
+        image: '../img/products/blue_pill.png',
+        name: 'Trevo Azul',
+        desc: '70MG DE MDMA POR COMPRIMIDO',
         btc: 0.0029,
-        eth: 0.1114
+
+        brl: 'R$ 85,00'
     },
     {
-        image: './img/products/green_pill.png',
-        name: 'Green Snowflake',
-        desc: '70MG OF MDMA PER PILL',
+        image: '../img/products/green_pill.png',
+        name: 'Floco de Neve Verde',
+        desc: '70MG DE MDMA POR COMPRIMIDO',
         btc: 0.0045,
-        eth: 0.1667
+        brl: 'R$ 130,00'
     },
     {
-        image: './img/products/maria_1.png',
-        name: 'Mario Super Drugs',
-        desc: '70MG OF MDMA PER PILL',
+        image: '../img/products/maria_1.png',
+        name: 'Mario Super Drogas',
+        desc: '70MG DE MDMA POR COMPRIMIDO',
         btc: 0.0021,
-        eth: 0.0802
+        brl: 'R$ 60,00' 
     },
     {
-        image: './img/products/purple_pill.png',
-        name: 'Purple Flower',
-        desc: '70MG OF MDMA PER PILL',
+        image: '../img/products/purple_pill.png',
+        name: 'Flor Roxa',
+        desc: '70MG DE MDMA POR COMPRIMIDO',
         btc: 0.0021,
-        eth: 0.0802
+        brl: 'R$ 60,00'
     },
     {
-        image: './img/products/super_man_1.png',
-        name: 'Super Drugs',
-        desc: '70MG OF MDMA PER PILL',
+        image: '../img/products/super_man_1.png',
+        name: 'Super Drogas',
+        desc: '70MG DE MDMA POR COMPRIMIDO',
         btc: 0.0021,
-        eth: 0.0802
+        brl: 'R$ 60,00'
     },
     {
-        image: './img/products/red_pill.png',
-        name: 'Red Pill',
-        desc: '70MG OF MDMA PER PILL',
+        image: '../img/products/red_pill.png',
+        name: 'Pílula Vermelha',
+        desc: '70MG DE MDMA POR COMPRIMIDO',
         btc: 0.0013,
-        eth: 0.0523
-    }
+        brl: 'R$ 40,00'
+    },
 ]
 
 const seila = () => {
-    produtos.forEach(({image, name, desc, btc, eth}) => {
+    produtos.forEach(({image, name, desc, btc}) => {
         const card = document.querySelector('.container')
-        console.log(card)
         card.innerHTML += `
         <div class="card_shop">
             <img src="${image}" alt="">
             <h3>${name}</h3>
             <p>${desc}</p>
             <a href="#" class="btc">${btc} BTC</a>
-            <a href="#" class="eth">${eth} ETH</a> 
         </div>
         `
     })
@@ -61,18 +60,25 @@ const seila = () => {
 
 const produtos2 = [
     {
-        image: './img/products/pink_pill.png',
-        name: 'SMILING DEVIL',
+        image: '../img/products/pink_pill.png',
+        name: 'DIABINHO SORRIDENTE',
         stars: 5,
-        novo: 'New Additon',
-        desc: 'meet the newest edition to our lineup of exclusive pills from our partner goodtimes. have a rasberry flavored bliss, each pill contains 130mg of mdma, and some natural flavoring. avalible starting next month.'
+        novo: 'Novidade',
+        desc: 'Conheça a mais nova edição da nossa linha exclusiva de comprimidos do nosso parceiro goodtimes. Sinta o sabor de framboesa, cada comprimido contém 130mg de mdma e um toque de sabor natural. Disponível a partir do próximo mês.'
     },
     {
-        image: './img/products/yellow_pill.png',
-        name: 'CONFUSED',
+        image: '../img/products/yellow_pill.png',
+        name: 'CONFUSO',
         stars: 4,
-        novo: 'New Additon',
-        desc: 'ever wonder why ecstacy looks like candy but is never flavored? taste the citrus lemon flavored ecstacy in your mouths. each pill contains 125mg of mdma, and some natural flavoring. avalible for a limited time only for our premium members.'
+        novo: 'Novidade',
+        desc: 'Já se perguntou por que ecstasy parece bala mas nunca tem sabor? Experimente o sabor cítrico de limão. Cada comprimido contém 125mg de mdma e um toque de sabor natural. Disponível por tempo limitado apenas para membros premium.'
+    },
+    {
+        image: '../img/products/tadalafelas.png',
+        name: 'TADALAFELLAS',
+        stars: 5,
+        novo: 'Mais Vendido',
+        desc: 'O mais vendido! 100mg de Tadalafila por comprimido. Potência e confiança para sua noite.'
     }
 ]
 
